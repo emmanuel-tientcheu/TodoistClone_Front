@@ -1,0 +1,113 @@
+.gobal-container{
+    width: calc(100vw - 19vw);
+    height: 100vh;
+    display: flex;
+    padding: 0px 0px 0px 17vw;
+}
+
+.logo {
+    margin: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right {
+    /* width: 100%; */
+    flex-grow: 8;
+}
+
+.left {
+    /* width: 100%;*/
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inscription-container {
+    margin: 75px 0px 0px 0px;
+}
+
+.option {
+    border: 1px solid gainsboro;
+    width: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-weight: 550;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.1s ease
+  }
+
+  .option:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+  }
+
+  .btn_submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 370px;
+    padding: 15px;
+    border: none;
+    font: inherit;
+    text-align: center;
+    background-color:  rgb(228, 66, 50);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .figure > span {
+    font-size: 13px;
+  }
+
+  .caption-header {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .figure-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 250px 0 0 100px;
+  }
+
+  .figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    
+    .gobal-container{
+        width: calc(100vw - 8vw) ;
+        height: 100vh;
+        padding: 0px 3px 0px 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .right {
+      display: none;
+    }
+}
+
+  /* Ordinateurs portables */
+  @media (max-width: 1024px) {
+    .right {
+      display: none;
+    }
+  }
